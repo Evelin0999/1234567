@@ -1,0 +1,115 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #16a085;
+    margin: 20px 0 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.seccion {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.destacado {
+    background: #e3f2fd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de volver al inicio */
+.boton-inicio {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el enlace que aparece vacío (lo ocultamos) */
+a.boton-inicio {
+    display: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    
+    .boton-inicio {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Tipografía */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #16a085;
+    margin: 15px 0 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Secciones */
+.seccion {
+    margin: 25px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Mensaje final */
+.mensaje-final {
+    text-align: center;
+    font-style: italic;
+    margin: 40px 0 20px;
+    padding: 20px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    border-left: 5px solid #2980b9;
+}
+
+/* Botón - Estilos corregidos */
+.boton {
+    display: block;
+    width: 200px;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin: 40px auto 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer; /* Añadido para mejor usabilidad */
+    border: none; /* Asegura que no tenga bordes */
+}
+
+.boton:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 20px;
+    }
+    
+    .boton {
+        width: 100%;
+    }
+}

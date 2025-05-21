@@ -1,0 +1,219 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+/* Encabezados */
+h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 1.8em;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #16a085;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+h4 {
+    color: #e74c3c;
+    font-size: 1.3em;
+    margin-top: 18px;
+}
+
+h5 {
+    color: #9b59b6;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Listas */
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+li:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efectos de hover para interactividad */
+li:hover {
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Animaciones sutiles */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Estilo para los elementos de lista diagnósticos */
+ul ul li:before {
+    content: "➤";
+    color: #9b59b6;
+}
+
+/* Estilos para imágenes */
+img.destacada {
+    width: 90%;
+    max-width: 600px;
+    border: 3px solid #3498db;
+    margin: 30px auto;
+}
+
+img.secundaria {
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #e74c3c;
+    margin: 20px auto;
+}
+
+
+img.tercera {
+    width: 40%;
+    max-width: 250px;
+    border: 2px solid #c217d1;
+    margin: 20px auto;
+}
+
+/* Estilo para los enlaces */
+a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Primer enlace - ¿Necesitas Ayuda? */
+a[href="ayuda.html"] {
+    background: linear-gradient(135deg, #ff7675, #d63031);
+    color: white;
+    border: 2px solid #d63031;
+}
+
+/* Segundo enlace - Cómo ayudar... */
+a[href="3.html"] {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    border: 2px solid #0984e3;
+}
+
+/* Efecto hover para ambos enlaces */
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(0,0,0,0.2);
+}
+
+a[href="ayuda.html"]:hover {
+    background: linear-gradient(135deg, #d63031, #ff7675);
+}
+
+a[href="3.html"]:hover {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+}
+
+/* Efecto activo/presionado */
+a:active {
+    transform: translateY(1px);
+}
+
+/* Pequeño efecto de onda al hacer hover */
+a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    z-index: -1;
+    transform: scale(0);
+    transition: all 0.3s;
+    border-radius: 30px;
+}
+
+a:hover::after {
+    transform: scale(1);
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    a {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
